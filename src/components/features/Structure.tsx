@@ -121,7 +121,7 @@ export function Structure() {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Infraestrutura <span className="text-primary">Adequada</span> 🏫
+            Infraestrutura <span className="text-primary">Adequada</span>
           </h2>
           
           <p className="text-lg text-muted-foreground">

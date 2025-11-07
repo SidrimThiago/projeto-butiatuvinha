@@ -103,7 +103,7 @@ export function News() {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Acompanhe o <span className="text-primary">Dia a Dia</span> da Escola 📰
+            Acompanhe o <span className="text-primary">Dia a Dia</span> da Escola
           </h2>
           
           <p className="text-lg text-muted-foreground">

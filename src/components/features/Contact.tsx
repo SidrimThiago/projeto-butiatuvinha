@@ -8,11 +8,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ImageWithFallback } from '@/components/shared/ImageWithFallback';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
   MessageSquare,
   Calendar,
   Users,
@@ -34,10 +34,26 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui seria implementada a lógica de envio do formulário
-    console.log('Formulário enviado:', formData);
-    // Mostrar toast de sucesso
+
+    const phoneNumber = "554133701574"; // número do WhatsApp no formato internacional
+    const { nome, email, telefone, idadeCrianca, turno, mensagem } = formData;
+
+    const text = `
+Olá! Gostaria de mais informações.
+*Nome:* ${nome}
+*E-mail:* ${email}
+*Telefone:* ${telefone}
+*Idade da criança:* ${idadeCrianca || "Não informado"}
+*Turno de interesse:* ${turno || "Não informado"}
+*Mensagem:* ${mensagem || "—"}
+  `;
+
+    const encodedText = encodeURIComponent(text.trim());
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+    window.open(whatsappUrl, "_blank");
   };
+
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -106,13 +122,13 @@ export function Contact() {
               Informações e Contato
             </span>
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Lorem <span className="text-primary">Ipsum</span> Dolor 📞
+            Lorem <span className="text-primary">Ipsum</span> Dolor
           </h2>
-          
+
           <p className="text-lg text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
@@ -266,7 +282,7 @@ export function Contact() {
               <h3 className="text-xl font-bold text-foreground">
                 Lorem Services
               </h3>
-              
+
               {servicos.map((servico, index) => (
                 <Card key={index} className="border-border/50 hover:shadow-lg transition-all duration-300 group cursor-pointer">
                   <CardContent className="p-6">
@@ -337,13 +353,13 @@ export function Contact() {
             {/* Map placeholder */}
             <Card className="border-border/50">
               <CardContent className="p-0">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.351014426834!2d-49.35509152468936!3d-25.393058377585387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce03175463899%3A0x7a190e99f4610659!2sCmei%20Butiatuvinha!5e0!3m2!1spt-BR!2sbr!4v1762542679495!5m2!1spt-BR!2sbr" 
-                  width="600" 
-                  height="450" 
-                  style={{ border: 0 }} 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.351014426834!2d-49.35509152468936!3d-25.393058377585387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce03175463899%3A0x7a190e99f4610659!2sCmei%20Butiatuvinha!5e0!3m2!1spt-BR!2sbr!4v1762542679495!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style={{ border: 0 }}
                   allowFullScreen={true}
-                  loading="lazy" 
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </CardContent>

@@ -11,7 +11,7 @@ export function Hero() {
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 pl-3">
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 bg-accent rounded-full">
                 <Image src="/images/logo-prefeitura.png" alt="Prefeitura de Curitiba" height={16} width={16} className="mr-2" />
@@ -23,7 +23,6 @@ export function Hero() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 CMEI{' '}
                 <span className="text-primary">Butiatuvinha</span>{' '}
-                💛
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-xl">
