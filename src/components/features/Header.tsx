@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import LogoCMEI from '@/assets/images/cmei-butiatuvinha.jpeg';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,10 +32,13 @@ export function Header() {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-4">
-            <Image 
-              src="@/assets/images/cmei-butiatuvinha.png" 
-              alt="Logo CMEI Butiatuvinha" 
+            <Image
+              src={LogoCMEI}
+              alt="Logo CMEI Butiatuvinha"
+              height={48}
+              width={48}
               className="h-12 w-auto object-contain"
+              priority
             />
             <div>
               <h1 className="text-lg font-semibold text-foreground">CMEI Butiatuvinha</h1>
@@ -90,43 +94,43 @@ export function Header() {
         {isMenuOpen && (
           <div className="lg:hidden pb-4 border-t border-border/50">
             <nav className="flex flex-col space-y-4 pt-4">
-              <a 
-                href="#inicio" 
+              <a
+                href="#inicio"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Início
               </a>
-              <a 
-                href="#sobre" 
+              <a
+                href="#sobre"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 A Escola
               </a>
-              <a 
-                href="#educacao" 
+              <a
+                href="#educacao"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Educação
               </a>
-              <a 
-                href="#estrutura" 
+              <a
+                href="#estrutura"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Estrutura
               </a>
-              <a 
-                href="#noticias" 
+              <a
+                href="#noticias"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Notícias
               </a>
-              <a 
-                href="#contato" 
+              <a
+                href="#contato"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >

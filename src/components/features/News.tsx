@@ -117,7 +117,7 @@ export function News() {
           <Card className="lg:col-span-1 border-border/50 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden">
             <div className="relative h-64 overflow-hidden">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop"
+                src="https://placehold.co/1080x720/14532d/FFFFFF/png?text=Sala+de+Aula+CMEI"
                 alt={noticiaDestaque.titulo}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -166,7 +166,7 @@ export function News() {
                   <div className="flex space-x-4">
                     <div className="shrink-0 w-20 h-20 rounded-lg overflow-hidden">
                       <ImageWithFallback 
-                        src={`https://images.unsplash.com/photo-150367626${noticia.id + 700}0-1c00da094a0b?w=200&h=200&fit=crop`}
+                        src={`https://placehold.co/1080x720/14532d/FFFFFF/png?text=Sala+de+Aula+CMEI`}
                         alt={noticia.titulo}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />

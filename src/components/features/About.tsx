@@ -50,15 +50,15 @@ export function About() {
               Nossa Missão
             </span>
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Educação Infantil 
+            Educação Infantil
             <span className="text-primary"> Municipal de Qualidade</span>
           </h2>
-          
+
           <p className="text-lg text-muted-foreground">
-            O CMEI Butiatuvinha é parte da rede municipal de educação de Curitiba, 
-            oferecendo educação infantil gratuita e de qualidade para crianças 
+            O CMEI Butiatuvinha é parte da rede municipal de educação de Curitiba,
+            oferecendo educação infantil gratuita e de qualidade para crianças
             de 4 meses a 5 anos no bairro Butiatuvinha.
           </p>
         </div>
@@ -69,12 +69,12 @@ export function About() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1748848597565-0b7bed80a849?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjbGFzc3Jvb20lMjB0ZWNobm9sb2d5JTIwa2lkc3xlbnwxfHx8fDE3NTc4MTE4MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="https://placehold.co/1080x720/14532d/FFFFFF/png?text=Sala+de+Aula+CMEI"
                 alt="Sala de aula moderna com tecnologia educacional"
                 className="w-full h-[400px] md:h-[500px] object-cover"
               />
             </div>
-            
+
             {/* Stats overlay */}
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 border border-border/50">
@@ -97,10 +97,10 @@ export function About() {
             <h3 className="text-2xl font-bold text-foreground">
               Nossos Diferenciais
             </h3>
-            
+
             <p className="text-muted-foreground">
-              Como parte da rede municipal de Curitiba, oferecemos educação infantil 
-              gratuita e de qualidade, seguindo as melhores práticas pedagógicas 
+              Como parte da rede municipal de Curitiba, oferecemos educação infantil
+              gratuita e de qualidade, seguindo as melhores práticas pedagógicas
               e as diretrizes nacionais para primeira infância.
             </p>
 
@@ -116,7 +116,7 @@ export function About() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-3">
                 <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -128,7 +128,7 @@ export function About() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-3">
                 <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>

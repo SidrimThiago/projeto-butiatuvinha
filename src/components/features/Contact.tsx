@@ -248,7 +248,7 @@ export function Contact() {
               <CardContent className="p-0">
                 <div className="relative h-48">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1640655367482-fa9797fe1258?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXJpdGliYSUyMGNpdHklMjBoYWxsJTIwZ292ZXJubWVudCUyMGJ1aWxkaW5nJTIwYnJhemlsfGVufDF8fHx8MTc1NzgxMzM4N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://placehold.co/1080x720/14532d/FFFFFF/png?text=Sala+de+Aula+CMEI"
                     alt="Prefeitura de Curitiba - Edifício governamental"
                     className="w-full h-full object-cover"
                   />
