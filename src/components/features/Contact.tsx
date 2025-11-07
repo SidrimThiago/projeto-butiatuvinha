@@ -337,17 +337,15 @@ export function Contact() {
             {/* Map placeholder */}
             <Card className="border-border/50">
               <CardContent className="p-0">
-                <div className="h-48 bg-muted rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-sm text-muted-foreground">
-                      Lorem Street, 123 - Lorem District
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      Lorem interactive map here
-                    </p>
-                  </div>
-                </div>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.351014426834!2d-49.35509152468936!3d-25.393058377585387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce03175463899%3A0x7a190e99f4610659!2sCmei%20Butiatuvinha!5e0!3m2!1spt-BR!2sbr!4v1762542679495!5m2!1spt-BR!2sbr" 
+                  width="600" 
+                  height="450" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true}
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </CardContent>
             </Card>
           </div>
